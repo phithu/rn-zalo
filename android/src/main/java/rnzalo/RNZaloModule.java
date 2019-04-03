@@ -28,6 +28,7 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void login(final Promise promise) {
+        ZaloSDK.Instance.unauthenticate();
         final ReactApplicationContext activity = this.mReactContext;
         final String[] Fields = {"id", "birthday", "gender", "picture", "name"};
         ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), new OAuthCompleteListener() {

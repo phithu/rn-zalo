@@ -1,5 +1,5 @@
 
-# rn-zalo
+# React Native Zalo
 
 ## Getting started
 

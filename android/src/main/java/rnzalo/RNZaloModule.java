@@ -27,10 +27,9 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void login(Promise promise) {
+    public void login(final Promise promise) {
         final ReactApplicationContext activity = this.mReactContext;
-        String[] Fields = {"id", "birthday", "gender", "picture", "name"};
-
+        final String[] Fields = {"id", "birthday", "gender", "picture", "name"};
         ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), new OAuthCompleteListener() {
             @Override
             public void onAuthenError(int errorCode, String message) {
@@ -40,7 +39,7 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
 
             @Override
             public void onGetOAuthComplete(long uId, String oauthCode, String channel) {
-                WritableMap params = Arguments.createMap();
+                final WritableMap params = Arguments.createMap();
                 params.putString("uId", "" + uId);
                 params.putString("oauthCode", "" + oauthCode);
                 params.putString("channel", "" + channel);
@@ -74,6 +73,6 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "Zalo";
+        return "RNZalo";
     }
 }

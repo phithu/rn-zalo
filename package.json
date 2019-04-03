@@ -1,5 +1,5 @@
 {
-  "name": "react-native-zalo",
+  "name": "rn-zalo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "rn-zalo",
+    "react-native-zalo",
+    "zalo"
   ],
-  "author": "",
-  "license": "",
+  "author": "Phi Thu",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "*"
   }

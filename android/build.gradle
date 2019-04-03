@@ -47,8 +47,8 @@ repositories {
 }
 
 dependencies {
-    implementation "com.zing.zalo.zalosdk:core:2.4.2501"
-    implementation "com.zing.zalo.zalosdk:auth:2.4.2501"
+    implementation "com.zing.zalo.zalosdk:core:+"
+    implementation "com.zing.zalo.zalosdk:auth:+"
     implementation "com.facebook.react:react-native:+"  // From node_modules
 }
   

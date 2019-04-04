@@ -23,7 +23,7 @@
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import rnzalo.RNZaloPackage;` to the imports at the top of the file
   - Add `new RNZaloPackage()` to the list returned by the `getPackages()` method
-  - ADD `ZaloSDKApplication.wrap(this)` on "onCreate" function
+  - Add `ZaloSDKApplication.wrap(this)` on "onCreate" function
 2. Open up `android/app/src/main/java/[...]/MainActivity.java`
   ```
  ... 
@@ -49,8 +49,8 @@
   	```
 4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-  	 ...
-  	 implementation "com.zing.zalo.zalosdk:core:2.4.2501"
+  	...
+  	implementation "com.zing.zalo.zalosdk:core:2.4.2501"
     implementation "com.zing.zalo.zalosdk:auth:2.4.2501"
     implementation project(':rn-zalo')
   	```

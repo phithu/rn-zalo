@@ -16,5 +16,6 @@
   "license": "MIT",
   "peerDependencies": {
     "react-native": "*"
-  }
+  },
+  "homepage": "https://github.com/phithu/rn-zalo"
 }

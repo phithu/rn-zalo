@@ -62,7 +62,7 @@
 </res>
 ```
 
-6 Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
+6. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
 ```
  <application
         ...

@@ -1,7 +1,6 @@
 
 # React Native Zalo
-
-## Getting started
+![](./screenshots/android.gif)
 
 `$ npm install rn-zalo --save`
 

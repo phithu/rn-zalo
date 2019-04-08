@@ -41,6 +41,7 @@ end
 5. Add URL Type `Main target setting -> info -> URL types -> click +`
 
 `identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
+
 6. Open `AppDelegate.m`
 ```
 ...

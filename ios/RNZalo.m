@@ -11,7 +11,7 @@ RCT_REMAP_METHOD(login,
    [[ZaloSDK sharedInstance] unauthenticate];
    [[ZaloSDK sharedInstance] authenticateZaloWithAuthenType:ZAZAloSDKAuthenTypeViaZaloAppAndWebView
     parentController:self
-    handler:^(ZOOauthResponseObject * response) { //callback kết quả đăng nhập
+    handler:^(ZOOauthResponseObject * response) {
      if([response isSucess]) {
     NSString * oauthCode = response.oauthCode;
        resolve(oauthCode);
@@ -39,7 +39,6 @@ RCT_EXPORT_METHOD(getProfile: (RCTResponseSenderBlock)successCallback failureCal
    ^(ZOGraphResponseObject *response) {
 
      if(response.errorCode == kZaloSDKErrorCodeNoneError) {
-       // Lấy profile thành công
        successCallback(@[response.data]);
      } else {
        failureCallback(

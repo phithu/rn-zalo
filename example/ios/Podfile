@@ -1,0 +1,11 @@
+workspace 'RNLoginZalo'
+project 'RNLoginZalo'
+project '../node_modules/rn-zalo/ios/RNZalo'
+target 'RNLoginZalo' do
+    project 'RNLoginZalo'
+    pod 'ZaloSDK'
+end
+target 'RNZalo' do
+    project '../node_modules/rn-zalo/ios/RNZalo'
+    pod 'ZaloSDK'
+end

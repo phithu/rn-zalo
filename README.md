@@ -1,23 +1,28 @@
 
 # React Native Zalo
-![](./screenshots/android.gif)
-
-![](./screenshots/ios.gif)
 
 `$ npm install rn-zalo --save`
+
+### Zalo SDK Documents
+- iOS: https://developers.zalo.me/docs/sdk/ios-sdk-9
+- Android: https://developers.zalo.me/docs/sdk/android-sdk-8
 
 ### Mostly automatic installation
 
 `$ react-native link rn-zalo`
 
-### Manual installation
+### Limitation
 
+- **Only working on real device**
+
+### Manual installation
 
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `rn-zalo` and add `RNZalo.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNZalo.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+4. Create a ``
 4. Run your project (`Cmd+R`)<
 
 #### Android

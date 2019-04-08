@@ -1,4 +1,3 @@
-//
 import {
   NativeModules,
   Platform,
@@ -14,8 +13,10 @@ class Zalo {
         return new Promise((resolve, reject) => {
           RNZalo.getProfile((data) => {
             resolve({
-              ...data,
+              user: data,
               oauthCode,
+              uId: null,
+              channel: null,
             });
           }, (e) => {
             reject(e);

@@ -12,7 +12,7 @@ import com.zing.zalo.zalosdk.oauth.ZaloSDK;
 import com.zing.zalo.zalosdk.oauth.OauthResponse;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.Promise;
-
+import com.zing.zalo.zalosdk.oauth.LoginVia;
 
 import org.json.JSONObject;
 
@@ -31,7 +31,7 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
         ZaloSDK.Instance.unauthenticate();
         final ReactApplicationContext activity = this.mReactContext;
         final String[] Fields = {"id", "birthday", "gender", "picture", "name"};
-        ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), new OAuthCompleteListener() {
+        ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), LoginVia.APP_OR_WEB , new OAuthCompleteListener() {
             @Override
             public void onAuthenError(int errorCode, String message) {
                 final String code = errorCode + "";

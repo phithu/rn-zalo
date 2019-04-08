@@ -22,8 +22,47 @@
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `rn-zalo` and add `RNZalo.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNZalo.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Create a ``
-4. Run your project (`Cmd+R`)<
+4. Create a `Podfile` in ios folder (If you don't have Podfile file in ios folder)
+- `cd ios && touch Podfile`
+- Copy and paste content bellow to `Podfile`, then `pod install`
+```
+workspace '<PROJECT_NAME>'
+project '<PROJECT_NAME>'
+project '../node_modules/rn-zalo/ios/RNZalo'
+target '<PROJECT_NAME>' do
+    project '<PROJECT_NAME>'
+    pod 'ZaloSDK'
+end
+target 'RNZalo' do
+    project '../node_modules/rn-zalo/ios/RNZalo'
+    pod 'ZaloSDK'
+end
+```
+5. Add URL Type `Main target setting -> info -> URL types -> click +`
+
+`identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
+6. Open `AppDelegate.m`
+```
+...
+#import <ZaloSDK/ZaloSDK.h>
+- (BOOL)application:(UIApplication *)application
+ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ...
+    [ZaloSDK sharedInstance initializeWithAppId:@"<YOUR_APP_ID>"];
+    return YES;
+}
+  
+- (BOOL)application:(UIApplication *)application 
+    openURL:(NSURL *)url
+    sourceApplication:(NSString *)sourceApplication
+    annotation:(id)annotation {
+ 
+    return [[ZDKApplicationDelegate sharedInstance] 
+    application:application
+    openURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+```
+7. Clear and Run your project
 
 #### Android
 

@@ -6,7 +6,7 @@
  */
 
 #import "AppDelegate.h"
-
+#import <ZaloSDK/ZaloSDK.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -27,7 +27,18 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [[ZaloSDK sharedInstance] initializeWithAppId:@"2613582731942964398"];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+  
+  return [[ZDKApplicationDelegate sharedInstance]
+          application:application
+          openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

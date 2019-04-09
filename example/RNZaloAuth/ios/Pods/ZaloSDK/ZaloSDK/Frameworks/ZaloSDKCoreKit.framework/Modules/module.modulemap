@@ -1,0 +1,6 @@
+framework module ZaloSDKCoreKit {
+  umbrella header "ZaloSDKCoreKit.h"
+
+  export *
+  module * { export * }
+}

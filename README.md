@@ -52,7 +52,7 @@ end
 - (BOOL)application:(UIApplication *)application
  didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ...
-    [ZaloSDK sharedInstance initializeWithAppId:@"<YOUR_APP_ID>"];
+    [[ZaloSDK sharedInstance] initializeWithAppId:@"<YOUR_APP_ID>"];
     return YES;
 }
   
@@ -72,6 +72,7 @@ end
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import rnzalo.RNZaloPackage;` to the imports at the top of the file
+  - Add `import com.zing.zalo.zalosdk.oauth.ZaloSDKApplication;` to the imports
   - Add `new RNZaloPackage()` to the list returned by the `getPackages()` method
   - Add `ZaloSDKApplication.wrap(this)` on "onCreate" function
 2. Open up `android/app/src/main/java/[...]/MainActivity.java`

@@ -1,5 +1,5 @@
 {
-  "name": "rn-login-zalo",
+  "name": "RNZaloAuth",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.3",
-    "rn-zalo": "^2.0.2"
+    "react-native": "0.59.4",
+    "rn-zalo": "git+https://github.com/phithu/rn-zalo.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/runtime": "^7.4.3",
-    "babel-jest": "^24.7.0",
-    "jest": "^24.7.0",
-    "metro-react-native-babel-preset": "^0.53.1",
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "babel-jest": "24.7.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
     "react-test-renderer": "16.8.3"
   },
   "jest": {

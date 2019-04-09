@@ -9,6 +9,7 @@ import React from 'react';
 import RNZalo from 'rn-zalo';
 
 export default class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {

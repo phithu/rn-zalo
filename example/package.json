@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.3",
-    "rn-zalo": "^2.0.1"
+    "rn-zalo": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

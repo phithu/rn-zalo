@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		8D18C53E2E6C28ED6A15A569163718B2 /* ZaloSDK-iOS9.0 */ = {
+		51D9135097E90EFB2F901D09015F4C31 /* ZaloSDK-iOS9.0 */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FA845E0B64C76D2C0A1735A274759120 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS9.0" */;
+			buildConfigurationList = BF14A81086496B2FBFB95FD44D7BF1C9 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS9.0" */;
 			buildPhases = (
 			);
 			dependencies = (
 			);
 			name = "ZaloSDK-iOS9.0";
 		};
-		E0BB5DEFDBCD757740C7B46933E4CA9D /* ZaloSDK-iOS8.0 */ = {
+		724C5C7584A63B9988F17FF59876A616 /* ZaloSDK-iOS8.0 */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DCE59CA36BC076BB0D7309D4230B8477 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS8.0" */;
+			buildConfigurationList = 7AEC077FFA9ACA38A350201C54C00348 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS8.0" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -28,56 +28,56 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		20D69BFDE63D9BB6E1A6D3A27B875D76 /* Pods-RNZaloAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39971DB0AE502BFEFAA1D2C7E731C219 /* Pods-RNZaloAuth-dummy.m */; };
-		55EDFA1DF6F40F8220C6080DC04B561B /* Pods-RNZalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2332DCE222CAD2EB969D6CD298F6C /* Pods-RNZalo-dummy.m */; };
+		9AE192B570EE1A57C6576AC605C2F408 /* Pods-RNZalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FD5C94806D32AC206A214A6AD4972 /* Pods-RNZalo-dummy.m */; };
+		A4723770B5BFCF69767F891773FB1AF6 /* Pods-RNZaloAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE69CFB67949C3CFBA9CE2BEC021BAD /* Pods-RNZaloAuth-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D760B968696BB4DB84F65C9674B65C5 /* PBXContainerItemProxy */ = {
+		837F1F6512637EEA9354BB74DD1A7AFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0BB5DEFDBCD757740C7B46933E4CA9D;
+			remoteGlobalIDString = 724C5C7584A63B9988F17FF59876A616;
 			remoteInfo = "ZaloSDK-iOS8.0";
 		};
-		9CE8D7D2F7E2A7A99F44DCA328787847 /* PBXContainerItemProxy */ = {
+		8C5BA9F4B72FB1426382113A1892498B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D18C53E2E6C28ED6A15A569163718B2;
+			remoteGlobalIDString = 51D9135097E90EFB2F901D09015F4C31;
 			remoteInfo = "ZaloSDK-iOS9.0";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18B1E28E77485CA482D881F3DC8F5DE8 /* ZaloSDK-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZaloSDK-iOS8.0.xcconfig"; sourceTree = "<group>"; };
-		1BD60C245F9C89A99E993E70F3414277 /* Pods-RNZaloAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZaloAuth.debug.xcconfig"; sourceTree = "<group>"; };
-		263855A704A710D0F20CCF89C36F257A /* libPods-RNZalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNZalo.a"; path = "libPods-RNZalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E986248B5DF6E380005BFFE91FE84D7 /* Pods-RNZalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZalo.release.xcconfig"; sourceTree = "<group>"; };
-		39971DB0AE502BFEFAA1D2C7E731C219 /* Pods-RNZaloAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNZaloAuth-dummy.m"; sourceTree = "<group>"; };
-		3E3D8D381E7F254DA027619AA297CCA9 /* ZaloSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZaloSDK.framework; path = ZaloSDK/Frameworks/ZaloSDK.framework; sourceTree = "<group>"; };
-		66B8883D1DC106CA5AB1D9075689C952 /* Pods-RNZaloAuth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNZaloAuth-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6A52ADBBCFBD8DDDC76470E08239AFC3 /* Pods-RNZalo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNZalo-acknowledgements.plist"; sourceTree = "<group>"; };
-		7167F7C05982731AAF9936BD4B87FE5D /* Pods-RNZaloAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZaloAuth.release.xcconfig"; sourceTree = "<group>"; };
-		770601704E77F5D214BFFFF477EB7A24 /* ZaloSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZaloSDKCoreKit.framework; path = ZaloSDK/Frameworks/ZaloSDKCoreKit.framework; sourceTree = "<group>"; };
-		79D2332DCE222CAD2EB969D6CD298F6C /* Pods-RNZalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNZalo-dummy.m"; sourceTree = "<group>"; };
+		237652F6B74E83343AF3F5CFB1BEA70D /* ZaloSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZaloSDK.framework; path = ZaloSDK/Frameworks/ZaloSDK.framework; sourceTree = "<group>"; };
+		25ADEEDE88451E83739E669BECCEFC7E /* libPods-RNZaloAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNZaloAuth.a"; path = "libPods-RNZaloAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31EB949C6582F69103BD2461F2F6F43D /* Pods-RNZaloAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZaloAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		43D47F44089CE00E863565AD856CC7D1 /* libPods-RNZalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNZalo.a"; path = "libPods-RNZalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E9B5EF27B2900277D43BB8E2B20322 /* ZaloSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZaloSDKCoreKit.framework; path = ZaloSDK/Frameworks/ZaloSDKCoreKit.framework; sourceTree = "<group>"; };
+		50F538C3829D4B08EA19929F8F9C2281 /* Pods-RNZalo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNZalo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C5FD5C94806D32AC206A214A6AD4972 /* Pods-RNZalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNZalo-dummy.m"; sourceTree = "<group>"; };
+		7DEA08AD55D7E11B45866E7C2718786F /* Pods-RNZaloAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZaloAuth.release.xcconfig"; sourceTree = "<group>"; };
+		7FE69CFB67949C3CFBA9CE2BEC021BAD /* Pods-RNZaloAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNZaloAuth-dummy.m"; sourceTree = "<group>"; };
 		85D17FDBC70EE90F3B0471213EBA132A /* ZaloSDK-iOS9.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ZaloSDK-iOS9.0.xcconfig"; path = "../ZaloSDK-iOS9.0/ZaloSDK-iOS9.0.xcconfig"; sourceTree = "<group>"; };
+		98AA89812E1B3144F68E00C70712D3DE /* Pods-RNZalo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNZalo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B915B15DE641D4E632CBED9A0B98F0A /* Pods-RNZaloAuth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNZaloAuth-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE3E478F460606264451544BFF79E78C /* Pods-RNZalo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZalo.debug.xcconfig"; sourceTree = "<group>"; };
-		C2EDA325861866CE1961EC6F0D22A6A5 /* libPods-RNZaloAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNZaloAuth.a"; path = "libPods-RNZaloAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8247215F11823B51032ED99C4D95447 /* Pods-RNZalo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNZalo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FFAEC1F723516ADF64C2047F7AF8EC03 /* Pods-RNZaloAuth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNZaloAuth-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9C95671462CE0EE43C6FF523C4320A1 /* Pods-RNZaloAuth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNZaloAuth-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B330EB7D32902486B9C1A477B8FA06E8 /* Pods-RNZalo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZalo.debug.xcconfig"; sourceTree = "<group>"; };
+		C1A22D33FD0A1B980F8EEA19643524B7 /* Pods-RNZalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNZalo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A05B4DDB4FBBBC0DFEFFFE132E3FAF8 /* Frameworks */ = {
+		53236B9CBCB2307786C40BBC248543C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91B5AAFC75C6442E2CE20085C2C4CB94 /* Frameworks */ = {
+		56A1960C8A6A002AA4366D017DD5C6B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,15 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18BE7BC60EB4170DB077D56454BB679A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E3D8D381E7F254DA027619AA297CCA9 /* ZaloSDK.framework */,
-				770601704E77F5D214BFFFF477EB7A24 /* ZaloSDKCoreKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1D037178733737C925689E2EF7FFBFEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,47 +95,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2C05821C1B6EA9696C814848C5E62B4B /* Pods-RNZalo */ = {
+			isa = PBXGroup;
+			children = (
+				98AA89812E1B3144F68E00C70712D3DE /* Pods-RNZalo-acknowledgements.markdown */,
+				50F538C3829D4B08EA19929F8F9C2281 /* Pods-RNZalo-acknowledgements.plist */,
+				6C5FD5C94806D32AC206A214A6AD4972 /* Pods-RNZalo-dummy.m */,
+				B330EB7D32902486B9C1A477B8FA06E8 /* Pods-RNZalo.debug.xcconfig */,
+				C1A22D33FD0A1B980F8EEA19643524B7 /* Pods-RNZalo.release.xcconfig */,
+			);
+			name = "Pods-RNZalo";
+			path = "Target Support Files/Pods-RNZalo";
+			sourceTree = "<group>";
+		};
 		45E2F53561486AAD79D8E790B48C3D0A /* ZaloSDK */ = {
 			isa = PBXGroup;
 			children = (
-				18BE7BC60EB4170DB077D56454BB679A /* Frameworks */,
+				E87375113AC892303F0E4E1B8C87B81B /* Frameworks */,
 				E7622F180C8F14DC07B1DA39AA45779F /* Support Files */,
 			);
 			name = ZaloSDK;
 			path = ZaloSDK;
 			sourceTree = "<group>";
 		};
-		48D8E58658391FE7A8ACF5FB18E8C076 /* Pods-RNZaloAuth */ = {
+		A7DD80F0B5F06E9A6062737BA9B6288D /* Pods-RNZaloAuth */ = {
 			isa = PBXGroup;
 			children = (
-				66B8883D1DC106CA5AB1D9075689C952 /* Pods-RNZaloAuth-acknowledgements.markdown */,
-				FFAEC1F723516ADF64C2047F7AF8EC03 /* Pods-RNZaloAuth-acknowledgements.plist */,
-				39971DB0AE502BFEFAA1D2C7E731C219 /* Pods-RNZaloAuth-dummy.m */,
-				1BD60C245F9C89A99E993E70F3414277 /* Pods-RNZaloAuth.debug.xcconfig */,
-				7167F7C05982731AAF9936BD4B87FE5D /* Pods-RNZaloAuth.release.xcconfig */,
+				A9C95671462CE0EE43C6FF523C4320A1 /* Pods-RNZaloAuth-acknowledgements.markdown */,
+				9B915B15DE641D4E632CBED9A0B98F0A /* Pods-RNZaloAuth-acknowledgements.plist */,
+				7FE69CFB67949C3CFBA9CE2BEC021BAD /* Pods-RNZaloAuth-dummy.m */,
+				31EB949C6582F69103BD2461F2F6F43D /* Pods-RNZaloAuth.debug.xcconfig */,
+				7DEA08AD55D7E11B45866E7C2718786F /* Pods-RNZaloAuth.release.xcconfig */,
 			);
 			name = "Pods-RNZaloAuth";
 			path = "Target Support Files/Pods-RNZaloAuth";
 			sourceTree = "<group>";
 		};
-		89171845F6520966D551AFA828BE1235 /* Pods-RNZalo */ = {
-			isa = PBXGroup;
-			children = (
-				C8247215F11823B51032ED99C4D95447 /* Pods-RNZalo-acknowledgements.markdown */,
-				6A52ADBBCFBD8DDDC76470E08239AFC3 /* Pods-RNZalo-acknowledgements.plist */,
-				79D2332DCE222CAD2EB969D6CD298F6C /* Pods-RNZalo-dummy.m */,
-				BE3E478F460606264451544BFF79E78C /* Pods-RNZalo.debug.xcconfig */,
-				2E986248B5DF6E380005BFFE91FE84D7 /* Pods-RNZalo.release.xcconfig */,
-			);
-			name = "Pods-RNZalo";
-			path = "Target Support Files/Pods-RNZalo";
-			sourceTree = "<group>";
-		};
 		C8F55E412ADDCE1C3330549BF08F6FC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				263855A704A710D0F20CCF89C36F257A /* libPods-RNZalo.a */,
-				C2EDA325861866CE1961EC6F0D22A6A5 /* libPods-RNZaloAuth.a */,
+				43D47F44089CE00E863565AD856CC7D1 /* libPods-RNZalo.a */,
+				25ADEEDE88451E83739E669BECCEFC7E /* libPods-RNZaloAuth.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,8 +154,8 @@
 		D70BA188F46D5162E208BB928EC0C463 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				89171845F6520966D551AFA828BE1235 /* Pods-RNZalo */,
-				48D8E58658391FE7A8ACF5FB18E8C076 /* Pods-RNZaloAuth */,
+				2C05821C1B6EA9696C814848C5E62B4B /* Pods-RNZalo */,
+				A7DD80F0B5F06E9A6062737BA9B6288D /* Pods-RNZaloAuth */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -186,17 +177,26 @@
 			path = "../Target Support Files/ZaloSDK-iOS8.0";
 			sourceTree = "<group>";
 		};
+		E87375113AC892303F0E4E1B8C87B81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				237652F6B74E83343AF3F5CFB1BEA70D /* ZaloSDK.framework */,
+				48E9B5EF27B2900277D43BB8E2B20322 /* ZaloSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5263E6457F0F990FB20B54A34ACA0036 /* Headers */ = {
+		354A342C1A5A1B3B575E28A77582AF21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91753D23494B4C6DDE6E6291CC6C18D3 /* Headers */ = {
+		879DA4BA7780284D73C36CC7EE38EF10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,40 +206,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05F187623D672FFF517EECD185D3EE36 /* Pods-RNZalo */ = {
+		16476689D2092012CD177551C881737C /* Pods-RNZalo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01E99982DAB03909560E46B4B7F3F62A /* Build configuration list for PBXNativeTarget "Pods-RNZalo" */;
+			buildConfigurationList = 4BABB0AEF79DCDA8C812A98502EF7834 /* Build configuration list for PBXNativeTarget "Pods-RNZalo" */;
 			buildPhases = (
-				5263E6457F0F990FB20B54A34ACA0036 /* Headers */,
-				CB035F5457164F940A99B12B4101488F /* Sources */,
-				4A05B4DDB4FBBBC0DFEFFFE132E3FAF8 /* Frameworks */,
+				879DA4BA7780284D73C36CC7EE38EF10 /* Headers */,
+				38DDECB9B6AADCC4C7B239FC8CD4A0AB /* Sources */,
+				56A1960C8A6A002AA4366D017DD5C6B2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9702E98315D4FEF84F4162D95AA2029 /* PBXTargetDependency */,
+				0973E3707CFAB9FF4A3046283737847D /* PBXTargetDependency */,
 			);
 			name = "Pods-RNZalo";
 			productName = "Pods-RNZalo";
-			productReference = 263855A704A710D0F20CCF89C36F257A /* libPods-RNZalo.a */;
+			productReference = 43D47F44089CE00E863565AD856CC7D1 /* libPods-RNZalo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5C930C3D392250B00590A5CBF445B36B /* Pods-RNZaloAuth */ = {
+		EC08111F2449FD15D01031A9EFF31E24 /* Pods-RNZaloAuth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04A94D47D1A138E450E73A2726E3D16F /* Build configuration list for PBXNativeTarget "Pods-RNZaloAuth" */;
+			buildConfigurationList = 48DC32B4023D9610A1A1DD5C84BEEA4C /* Build configuration list for PBXNativeTarget "Pods-RNZaloAuth" */;
 			buildPhases = (
-				91753D23494B4C6DDE6E6291CC6C18D3 /* Headers */,
-				B503DE7F952DA03882B6DC3BCE0AD7D1 /* Sources */,
-				91B5AAFC75C6442E2CE20085C2C4CB94 /* Frameworks */,
+				354A342C1A5A1B3B575E28A77582AF21 /* Headers */,
+				F00B0998826C2CA786C8C61F2E829E4E /* Sources */,
+				53236B9CBCB2307786C40BBC248543C8 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				316FC6BAE0C7B6B44C69EF3A1D7AF8E9 /* PBXTargetDependency */,
+				7A1AD543CCCCC3642081E5B316DEFC6D /* PBXTargetDependency */,
 			);
 			name = "Pods-RNZaloAuth";
 			productName = "Pods-RNZaloAuth";
-			productReference = C2EDA325861866CE1961EC6F0D22A6A5 /* libPods-RNZaloAuth.a */;
+			productReference = 25ADEEDE88451E83739E669BECCEFC7E /* libPods-RNZaloAuth.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -248,12 +248,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -263,50 +263,94 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05F187623D672FFF517EECD185D3EE36 /* Pods-RNZalo */,
-				5C930C3D392250B00590A5CBF445B36B /* Pods-RNZaloAuth */,
-				E0BB5DEFDBCD757740C7B46933E4CA9D /* ZaloSDK-iOS8.0 */,
-				8D18C53E2E6C28ED6A15A569163718B2 /* ZaloSDK-iOS9.0 */,
+				16476689D2092012CD177551C881737C /* Pods-RNZalo */,
+				EC08111F2449FD15D01031A9EFF31E24 /* Pods-RNZaloAuth */,
+				724C5C7584A63B9988F17FF59876A616 /* ZaloSDK-iOS8.0 */,
+				51D9135097E90EFB2F901D09015F4C31 /* ZaloSDK-iOS9.0 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B503DE7F952DA03882B6DC3BCE0AD7D1 /* Sources */ = {
+		38DDECB9B6AADCC4C7B239FC8CD4A0AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D69BFDE63D9BB6E1A6D3A27B875D76 /* Pods-RNZaloAuth-dummy.m in Sources */,
+				9AE192B570EE1A57C6576AC605C2F408 /* Pods-RNZalo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB035F5457164F940A99B12B4101488F /* Sources */ = {
+		F00B0998826C2CA786C8C61F2E829E4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EDFA1DF6F40F8220C6080DC04B561B /* Pods-RNZalo-dummy.m in Sources */,
+				A4723770B5BFCF69767F891773FB1AF6 /* Pods-RNZaloAuth-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		316FC6BAE0C7B6B44C69EF3A1D7AF8E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ZaloSDK-iOS9.0";
-			target = 8D18C53E2E6C28ED6A15A569163718B2 /* ZaloSDK-iOS9.0 */;
-			targetProxy = 9CE8D7D2F7E2A7A99F44DCA328787847 /* PBXContainerItemProxy */;
-		};
-		C9702E98315D4FEF84F4162D95AA2029 /* PBXTargetDependency */ = {
+		0973E3707CFAB9FF4A3046283737847D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ZaloSDK-iOS8.0";
-			target = E0BB5DEFDBCD757740C7B46933E4CA9D /* ZaloSDK-iOS8.0 */;
-			targetProxy = 2D760B968696BB4DB84F65C9674B65C5 /* PBXContainerItemProxy */;
+			target = 724C5C7584A63B9988F17FF59876A616 /* ZaloSDK-iOS8.0 */;
+			targetProxy = 837F1F6512637EEA9354BB74DD1A7AFA /* PBXContainerItemProxy */;
+		};
+		7A1AD543CCCCC3642081E5B316DEFC6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZaloSDK-iOS9.0";
+			target = 51D9135097E90EFB2F901D09015F4C31 /* ZaloSDK-iOS9.0 */;
+			targetProxy = 8C5BA9F4B72FB1426382113A1892498B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+		098177171757014048763023FD1ADD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A22D33FD0A1B980F8EEA19643524B7 /* Pods-RNZalo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41878C92560D6822E90A54D8826DDBE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DEA08AD55D7E11B45866E7C2718786F /* Pods-RNZaloAuth.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,68 +405,33 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		16D75EE3B6583C4730E054C82CEF2FE4 /* Release */ = {
+		6803D95FEA5B04AAFE0D7E3048A5036A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7167F7C05982731AAF9936BD4B87FE5D /* Pods-RNZaloAuth.release.xcconfig */;
+			baseConfigurationReference = B330EB7D32902486B9C1A477B8FA06E8 /* Pods-RNZalo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2BC08F2611B84C8E5AC9AF0CCBD60400 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BD60C245F9C89A99E993E70F3414277 /* Pods-RNZaloAuth.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3628295C3E21BC999EEC5D94541CE3F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85D17FDBC70EE90F3B0471213EBA132A /* ZaloSDK-iOS9.0.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -481,21 +490,47 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5EE3790E27C86240904DD1F7373F7FC8 /* Debug */ = {
+		AAB86938D4DD3FB6C2129F02775E893D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE3E478F460606264451544BFF79E78C /* Pods-RNZalo.debug.xcconfig */;
+			baseConfigurationReference = 18B1E28E77485CA482D881F3DC8F5DE8 /* ZaloSDK-iOS8.0.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA4F40CC9ADFFAD67D07E3DAD10F01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D17FDBC70EE90F3B0471213EBA132A /* ZaloSDK-iOS9.0.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96C95527CED7D735138E5FF5FE4E2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31EB949C6582F69103BD2461F2F6F43D /* Pods-RNZaloAuth.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -507,34 +542,7 @@
 			};
 			name = Debug;
 		};
-		76D4913E4FF7D6189FB16D4344E753C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18B1E28E77485CA482D881F3DC8F5DE8 /* ZaloSDK-iOS8.0.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		8B848FAFB5F98E2590C0FB745C9674E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18B1E28E77485CA482D881F3DC8F5DE8 /* ZaloSDK-iOS8.0.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A6372DA6D4EC2469FBBC3F7E28012E2B /* Release */ = {
+		F2A8E24756390006C6D085BD8407C886 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85D17FDBC70EE90F3B0471213EBA132A /* ZaloSDK-iOS9.0.xcconfig */;
 			buildSettings = {
@@ -548,23 +556,15 @@
 			};
 			name = Release;
 		};
-		FE8E492947CB7B10C61B4AFAABEE06B5 /* Release */ = {
+		F4DD8D6C0DB6203FBA27B17E7CFBC236 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E986248B5DF6E380005BFFE91FE84D7 /* Pods-RNZalo.release.xcconfig */;
+			baseConfigurationReference = 18B1E28E77485CA482D881F3DC8F5DE8 /* ZaloSDK-iOS8.0.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -573,47 +573,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01E99982DAB03909560E46B4B7F3F62A /* Build configuration list for PBXNativeTarget "Pods-RNZalo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EE3790E27C86240904DD1F7373F7FC8 /* Debug */,
-				FE8E492947CB7B10C61B4AFAABEE06B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04A94D47D1A138E450E73A2726E3D16F /* Build configuration list for PBXNativeTarget "Pods-RNZaloAuth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2BC08F2611B84C8E5AC9AF0CCBD60400 /* Debug */,
-				16D75EE3B6583C4730E054C82CEF2FE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
-				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCE59CA36BC076BB0D7309D4230B8477 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS8.0" */ = {
+		48DC32B4023D9610A1A1DD5C84BEEA4C /* Build configuration list for PBXNativeTarget "Pods-RNZaloAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D4913E4FF7D6189FB16D4344E753C8 /* Debug */,
-				8B848FAFB5F98E2590C0FB745C9674E0 /* Release */,
+				C96C95527CED7D735138E5FF5FE4E2EE /* Debug */,
+				41878C92560D6822E90A54D8826DDBE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA845E0B64C76D2C0A1735A274759120 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS9.0" */ = {
+		4BABB0AEF79DCDA8C812A98502EF7834 /* Build configuration list for PBXNativeTarget "Pods-RNZalo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3628295C3E21BC999EEC5D94541CE3F7 /* Debug */,
-				A6372DA6D4EC2469FBBC3F7E28012E2B /* Release */,
+				6803D95FEA5B04AAFE0D7E3048A5036A /* Debug */,
+				098177171757014048763023FD1ADD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AEC077FFA9ACA38A350201C54C00348 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS8.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB86938D4DD3FB6C2129F02775E893D /* Debug */,
+				F4DD8D6C0DB6203FBA27B17E7CFBC236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF14A81086496B2FBFB95FD44D7BF1C9 /* Build configuration list for PBXAggregateTarget "ZaloSDK-iOS9.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA4F40CC9ADFFAD67D07E3DAD10F01B /* Debug */,
+				F2A8E24756390006C6D085BD8407C886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -40,4 +40,5 @@ FOUNDATION_EXPORT const unsigned char ZaloSDKCoreKitVersionString[];
 #import <ZaloSDKCoreKit/ZDKSharedStorage.h>
 #import <ZaloSDKCoreKit/ZDKDeviceTracker.h>
 #import <ZaloSDKCoreKit/ZDKNetworkManager.h>
+#import <ZaloSDKCoreKit/ZDKSettingManager.h>
 

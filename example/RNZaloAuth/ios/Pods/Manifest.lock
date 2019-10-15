@@ -1,16 +1,16 @@
 PODS:
-  - ZaloSDK (2.3.0921.1)
+  - ZaloSDK (2.4.0717.1)
 
 DEPENDENCIES:
   - ZaloSDK
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ZaloSDK
 
 SPEC CHECKSUMS:
-  ZaloSDK: c2d703d5b9e3237e2f7cfd0b8e2b343434a4d0d9
+  ZaloSDK: 8e5957f23c561dd6f1464ff8f27ccf72c891b4a2
 
-PODFILE CHECKSUM: 1be776367f70507588113eb6d9cdb9fcb73328f3
+PODFILE CHECKSUM: 827c1f3609693c9cc9e8e60e51a569cfbe0cd402
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3

@@ -44,7 +44,8 @@ typedef NS_ENUM(NSUInteger, ZDKLogLevel) {
 /*!
  secret key is required for any log level except ZDKLogNone
  */
-+ (void) setLogLevel: (ZDKLogLevel) logLevel secretKey:(NSString *)key;
++ (void) setLogLevel: (ZDKLogLevel) logLevel secretKey:(NSString *)key DEPRECATED_MSG_ATTRIBUTE("use setLogLevel: instead");
++ (void) setLogLevel: (ZDKLogLevel) logLevel;
 + (ZDKLogLevel) logLevel;
 @end
 

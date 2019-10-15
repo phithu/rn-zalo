@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ZaloSDKCoreKit/ZDKConstants.h>
 @class ZOOauthResponseObject;
 
 
@@ -51,7 +52,7 @@ typedef NS_ENUM(NSInteger, ZOShareViaType) {
 #define ZDTSDK_MIN_STORE_EVENTS_INTERVAL 10
 #define ZDKSDK_DEFAULT_MAX_EVENT_LIFE_INTERVAL  259200 //seconds, 3 days
 #define ZSDK_LOG_TAG @"[ZDK]"
-#define ZALO_SDK_VERSION @"2.3.0921"
+#define ZALO_SDK_VERSION ZDK_CORE_VERSION
 
 //NOTIFICATION
 #define kZDTSDK_DID_UNAUTHENTICATE @"kZDTSDK_DID_UNAUTHENTICATE"

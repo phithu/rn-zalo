@@ -1,4 +1,4 @@
-package rnzalo;
+package com.phithu.rnzalo;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;

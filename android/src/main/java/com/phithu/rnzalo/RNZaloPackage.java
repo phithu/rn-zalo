@@ -1,5 +1,4 @@
-
-package rnzalo;
+package com.phithu.rnzalo;
 
 import java.util.ArrayList;
 import java.util.Collections;

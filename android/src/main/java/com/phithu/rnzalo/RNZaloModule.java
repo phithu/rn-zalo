@@ -1,6 +1,4 @@
-
-package rnzalo;
-
+package com.phithu.rnzalo;
 
 import com.zing.zalo.zalosdk.oauth.OAuthCompleteListener;
 import com.facebook.react.bridge.Arguments;

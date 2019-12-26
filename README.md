@@ -1,8 +1,6 @@
 
 # React Native Zalo
-![](./screenshots/android.gif)
 
-![](./screenshots/ios.gif)
 
 ## Installation
 

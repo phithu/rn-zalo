@@ -1,6 +1,10 @@
 
 # React Native Zalo
 
+[![npm version](https://badge.fury.io/js/rn-zalo.svg)](https://badge.fury.io/js/rn-zalo)
+[![npm](https://img.shields.io/npm/dt/rn-zalo.svg)](https://npmcharts.com/compare/rn-zalo?minimal=true)
+![MIT](https://img.shields.io/dub/l/vibe-d.svg)
+![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)
 
 Android | iOS
 ------------ | -------------

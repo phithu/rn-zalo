@@ -1,8 +1,10 @@
 
 # React Native Zalo
 
-<img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/ios.gif" width="360">
-<img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/android.gif" width="360">
+
+Android | iOS
+------------ | -------------
+<img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/android.gif" width="360"> | <img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/ios.gif" width="360">
 
 
 ## Installation

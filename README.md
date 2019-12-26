@@ -108,26 +108,14 @@ end
      }
  }
   ```
-3. Append the following lines to class `MainActivity`:
-  	```
-   ...
-   import android.content.Intent
-   import com.zing.zalo.zalosdk.oauth.ZaloSDK;
-   
-   @Override
-       public void onActivityResult(int reqCode, int resCode, Intent d) {
-           super.onActivityResult(reqCode, resCode, d);
-           ZaloSDK.Instance.onActivityResult(this, reqCode, resCode, d);
-       }
-  	```
-4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
   	...
     implementation "com.zing.zalo.zalosdk:core:+"
     implementation "com.zing.zalo.zalosdk:auth:+"
     implementation "com.zing.zalo.zalosdk:openapi:+"
   	```
-5. Add appId to `android/app/src/main/res/values/strings.xml`
+4. Add appId to `android/app/src/main/res/values/strings.xml`
 ```
 <resources>
     <string name="app_name">App Name</string>
@@ -135,7 +123,7 @@ end
 </res>
 ```
 
-6. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
+5. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
 ```
  <application
         ...

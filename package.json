@@ -1,6 +1,6 @@
 {
   "name": "rn-zalo",
-  "version": "2.1",
+  "version": "2.1.0",
   "description": "A React Native Module for Zalo SDK",
   "main": "index.js",
   "scripts": {

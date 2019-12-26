@@ -14,6 +14,7 @@ import com.zing.zalo.zalosdk.oauth.LoginVia;
 
 import org.json.JSONObject;
 
+
 public class RNZaloModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext mReactContext;
@@ -29,19 +30,17 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
         ZaloSDK.Instance.unauthenticate();
         final ReactApplicationContext activity = this.mReactContext;
         final String[] Fields = {"id", "birthday", "gender", "picture", "name"};
-        ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), LoginVia.APP_OR_WEB , new OAuthCompleteListener() {
+        ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), LoginVia.APP_OR_WEB, new OAuthCompleteListener() {
             @Override
             public void onAuthenError(int errorCode, String message) {
                 final String code = errorCode + "";
                 promise.reject(code, message);
             }
 
+
             @Override
-            public void onGetOAuthComplete(long uId, String oauthCode, String channel) {
+            public void onGetOAuthComplete(OauthResponse response) {
                 final WritableMap params = Arguments.createMap();
-                params.putString("uId", "" + uId);
-                params.putString("oauthCode", "" + oauthCode);
-                params.putString("channel", "" + channel);
                 ZaloSDK.Instance.getProfile(activity, new ZaloOpenAPICallback() {
                     @Override
                     public void onResult(JSONObject data) {
@@ -55,11 +54,6 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
                         }
                     }
                 }, Fields);
-            }
-
-            @Override
-            public void onGetOAuthComplete(OauthResponse oauthResponse) {
-                super.onGetOAuthComplete(oauthResponse);
             }
         });
     }

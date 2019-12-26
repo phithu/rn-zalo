@@ -1,5 +1,0 @@
-rootProject.name = 'RNZaloAuth'
-include ':rn-zalo'
-project(':rn-zalo').projectDir = new File(rootProject.projectDir, '../node_modules/rn-zalo/android')
-
-include ':app'

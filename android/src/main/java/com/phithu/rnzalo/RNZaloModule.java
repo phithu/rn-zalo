@@ -41,6 +41,8 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
             @Override
             public void onGetOAuthComplete(OauthResponse response) {
                 final WritableMap params = Arguments.createMap();
+                String oauthCode = response.getOauthCode();
+                params.putString("oauthCode", oauthCode);
                 ZaloSDK.Instance.getProfile(activity, new ZaloOpenAPICallback() {
                     @Override
                     public void onResult(JSONObject data) {

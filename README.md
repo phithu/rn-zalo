@@ -26,11 +26,11 @@ yarn add rn-zalo or npm i rn-zalo --save
 
 #### iOS
 
-#####1. Install pod: ```cd ios && pod install```
-#####2. Add url type `Main target setting -> info -> URL types -> click +`
+##### 1. Install pod: ```cd ios && pod install```
+##### 2. Add url type `Main target setting -> info -> URL types -> click +`
                 `identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
 
-#####3. Open `AppDelegate.m`
+##### 3. Open `AppDelegate.m`
 ```text
 #import <ZaloSDK/ZaloSDK.h>
 - (BOOL)application:(UIApplication *)application
@@ -45,15 +45,15 @@ yarn add rn-zalo or npm i rn-zalo --save
 }
 ```
 
-#####4. Clear and Run your project
+##### 4. Clear and Run your project
 
 #### Android
 
-#####1. Open up `android/app/src/main/java/[...]/MainApplication.java`
+##### 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.zing.zalo.zalosdk.oauth.ZaloSDKApplication;` to the imports
   - Add `ZaloSDKApplication.wrap(this)` on "onCreate" function
   
-#####2. Open up `android/app/src/main/java/[...]/MainActivity.java`
+##### 2. Open up `android/app/src/main/java/[...]/MainActivity.java`
   ```
  import android.content.Intent;
  import com.zing.zalo.zalosdk.oauth.ZaloSDK;
@@ -70,7 +70,7 @@ yarn add rn-zalo or npm i rn-zalo --save
  }
   ```
 
-#####3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+##### 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
   	...
     implementation "com.zing.zalo.zalosdk:core:+"
@@ -78,7 +78,7 @@ yarn add rn-zalo or npm i rn-zalo --save
     implementation "com.zing.zalo.zalosdk:openapi:+"
   	```
   	
-#####4. Add appId to `android/app/src/main/res/values/strings.xml`
+##### 4. Add appId to `android/app/src/main/res/values/strings.xml`
 ```
 <resources>
     <string name="app_name">App Name</string>
@@ -86,7 +86,7 @@ yarn add rn-zalo or npm i rn-zalo --save
 </res>
 ```
 
-#####5. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
+##### 5. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
 ```
  <application
         ...
@@ -107,7 +107,7 @@ yarn add rn-zalo or npm i rn-zalo --save
     </application>
 ```
 
-#####6. Open `proguard-rules.pro` file add code below
+##### 6. Open `proguard-rules.pro` file add code below
 ```text
 -keep class com.zing.zalo.**{ *; }
 -keep enum com.zing.zalo.**{ *; }

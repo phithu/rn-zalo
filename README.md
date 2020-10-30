@@ -11,30 +11,12 @@ Android | iOS
 <img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/android.gif" width="360"> | <img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/ios.gif" width="360">
 
 
-## Installation
+### Installation
 
 ```sh
-yarn add rn-zalo
+yarn add rn-zalo or npm i rn-zalo --save
 ```
 
-Or with npm
-
-```sh
-npm i rn-zalo --save
-```
-- **React Native 0.60 and higher**
-
-  ```sh
-  cd ios
-  pod install
-  cd ..
-  ```
-  
-- **React Native 0.59 and lower**
-  
-  ```sh
-  react-native link rn-zalo
-  ```
 
 ### Zalo SDK Documents
 - iOS: https://developers.zalo.me/docs/sdk/ios-sdk-9
@@ -44,32 +26,12 @@ npm i rn-zalo --save
 
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `rn-zalo` and add `RNZalo.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNZalo.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Create a `Podfile` in ios folder (If you don't have Podfile file in ios folder)
-- `cd ios && touch Podfile`
-- Copy and paste content bellow to `Podfile`, then `pod install`
-```
-workspace '<PROJECT_NAME>'
-project '<PROJECT_NAME>'
-project '../node_modules/rn-zalo/ios/RNZalo'
-target '<PROJECT_NAME>' do
-    project '<PROJECT_NAME>'
-    pod 'ZaloSDK'
-end
-target 'RNZalo' do
-    project '../node_modules/rn-zalo/ios/RNZalo'
-    pod 'ZaloSDK'
-end
-```
-##### 5. Add URL Type `Main target setting -> info -> URL types -> click +`
+#####1. Install pod: ```cd ios && pod install```
+#####2. Add url type `Main target setting -> info -> URL types -> click +`
+                `identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
 
-`identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
-
-##### 6. Open `AppDelegate.m`
-```
-...
+#####3. Open `AppDelegate.m`
+```text
 #import <ZaloSDK/ZaloSDK.h>
 - (BOOL)application:(UIApplication *)application
  didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -77,22 +39,21 @@ end
     [[ZaloSDK sharedInstance] initializeWithAppId:@"<YOUR_APP_ID>"];
     return YES;
 }
-...  
-
+ 
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
   return [[ZDKApplicationDelegate sharedInstance] application:application openURL:url options:options];
 }
-
 ```
-7. Clear and Run your project
+
+#####4. Clear and Run your project
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainApplication.java`
+#####1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.zing.zalo.zalosdk.oauth.ZaloSDKApplication;` to the imports
   - Add `ZaloSDKApplication.wrap(this)` on "onCreate" function
   
-2. Open up `android/app/src/main/java/[...]/MainActivity.java`
+#####2. Open up `android/app/src/main/java/[...]/MainActivity.java`
   ```
  import android.content.Intent;
  import com.zing.zalo.zalosdk.oauth.ZaloSDK;
@@ -108,14 +69,16 @@ end
      }
  }
   ```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+
+#####3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
   	...
     implementation "com.zing.zalo.zalosdk:core:+"
     implementation "com.zing.zalo.zalosdk:auth:+"
     implementation "com.zing.zalo.zalosdk:openapi:+"
   	```
-4. Add appId to `android/app/src/main/res/values/strings.xml`
+  	
+#####4. Add appId to `android/app/src/main/res/values/strings.xml`
 ```
 <resources>
     <string name="app_name">App Name</string>
@@ -123,7 +86,7 @@ end
 </res>
 ```
 
-5. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
+#####5. Add code bellow to `android/app/src/main/res/AndroidManifest.xml`
 ```
  <application
         ...
@@ -132,12 +95,23 @@ end
             android:value="@string/appID" />
 
         <activity
-            android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="sensor"
-            android:theme="@style/FixThemeForLoginWebview"
-            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>
+            android:name="com.zing.zalo.zalosdk.oauth.BrowserLoginActivity">
+        <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="zalo-[appid]" />
+    <!-- Lưu ý: thay [appid] bằng id của ứng dụng lấy trên trang developers --!>
+    </intent-filter>
+        </activity>
     </application>
+```
+
+#####6. Open `proguard-rules.pro` file add code below
+```text
+-keep class com.zing.zalo.**{ *; }
+-keep enum com.zing.zalo.**{ *; }
+-keep interface com.zing.zalo.**{ *; }
 ```
 ## Usage
 ```javascript

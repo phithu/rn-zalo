@@ -5,9 +5,9 @@ import {
   Image,
   Text,
   SafeAreaView,
-} from 'react-native';
-import React from 'react';
-import RNZalo from 'rn-zalo';
+} from "react-native";
+import React from "react";
+import RNZalo from "rn-zalo";
 
 export default class App extends React.Component {
 
@@ -23,7 +23,7 @@ export default class App extends React.Component {
       const data = await RNZalo.login();
       this.setState({ data });
     } catch (e) {
-      console.log('e', e);
+      console.log("e", e);
     }
   };
 
@@ -38,7 +38,7 @@ export default class App extends React.Component {
     const { birthday, gender, id, picture, name } = this.state.data.user;
     return (
       <View style={styles.userInfoContainer}>
-        <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Name: {name}</Text>
+        <Text style={{ fontSize: 18, fontWeight: "bold" }}>Name: {name}</Text>
         <Text>Id: {id}</Text>
         <Text>Birthday: {birthday}</Text>
         <Text>Gender: {gender}</Text>
@@ -56,11 +56,11 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <View style={{ marginTop: 30 }}>
             <TouchableOpacity style={styles.buttonStyle} onPress={this.login}>
-              <Text style={{ color: '#fff', fontSize: 18 }}>Login</Text>
+              <Text style={{ color: "#fff", fontSize: 18 }}>Login</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.buttonStyle} onPress={this.logout}>
-              <Text style={{ color: '#fff', fontSize: 18 }}>Logout</Text>
+              <Text style={{ color: "#fff", fontSize: 18 }}>Logout</Text>
             </TouchableOpacity>
           </View>
           {this.renderUser()}
@@ -73,20 +73,20 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: "#F5FCFF",
   },
   userInfoContainer: {
     flexGrow: 1,
     flexShrink: 1,
-    alignItems: 'center',
+    alignItems: "center",
   },
   buttonStyle: {
-    alignSelf: 'center',
+    alignSelf: "center",
     paddingVertical: 10,
     paddingHorizontal: 20,
-    backgroundColor: 'blue',
-    flexDirection: 'row',
-    alignItems: 'center',
+    backgroundColor: "blue",
+    flexDirection: "row",
+    alignItems: "center",
     borderRadius: 5,
     marginVertical: 10,
   },

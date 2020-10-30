@@ -1,0 +1,6 @@
+module Pods_ZaloExample_ZaloExampleTests {
+  umbrella header "Pods-ZaloExample-ZaloExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,7 +17,6 @@ Android | iOS
 yarn add rn-zalo or npm i rn-zalo --save
 ```
 
-
 ### Zalo SDK Documents
 - iOS: https://developers.zalo.me/docs/sdk/ios-sdk-9
 - Android: https://developers.zalo.me/docs/sdk/android-sdk-8
@@ -28,7 +27,7 @@ yarn add rn-zalo or npm i rn-zalo --save
 
 ##### 1. Install pod: ```cd ios && pod install```
 ##### 2. Add url type `Main target setting -> info -> URL types -> click +`
-                `identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
+`identifier = “zalo”, URL Schemes = “zalo-<YOUR_APP_ID>”`
 
 ##### 3. Open `AppDelegate.m`
 ```text
@@ -70,14 +69,12 @@ yarn add rn-zalo or npm i rn-zalo --save
  }
   ```
 
-##### 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-  	...
-    implementation "com.zing.zalo.zalosdk:core:+"
-    implementation "com.zing.zalo.zalosdk:auth:+"
-    implementation "com.zing.zalo.zalosdk:openapi:+"
-  	```
-  	
+##### 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`
+```text
+implementation "com.zing.zalo.zalosdk:core:+"
+implementation "com.zing.zalo.zalosdk:auth:+"
+implementation "com.zing.zalo.zalosdk:openapi:+"
+```
 ##### 4. Add appId to `android/app/src/main/res/values/strings.xml`
 ```
 <resources>

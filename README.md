@@ -11,7 +11,7 @@ Android | iOS
 <img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/android.gif" width="360"> | <img src="https://github.com/phithu/rn-zalo/blob/master/screenshots/ios.gif" width="360">
 
 
-### Installation (Mandatory)
+### Installation
 
 ```sh
 yarn add rn-zalo or npm i rn-zalo --save
@@ -21,7 +21,7 @@ yarn add rn-zalo or npm i rn-zalo --save
 - iOS: https://developers.zalo.me/docs/sdk/ios-sdk-9
 - Android: https://developers.zalo.me/docs/sdk/android-sdk-8
 
-### Installation
+### Setup (Mandatory)
 
 #### iOS
 

@@ -11,6 +11,7 @@ import com.zing.zalo.zalosdk.oauth.OauthResponse;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.Promise;
 import com.zing.zalo.zalosdk.oauth.LoginVia;
+import android.text.TextUtils;
 
 import org.json.JSONObject;
 
@@ -27,7 +28,6 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void login(final Promise promise) {
-        ZaloSDK.Instance.unauthenticate();
         final ReactApplicationContext activity = this.mReactContext;
         final String[] Fields = {"id", "birthday", "gender", "picture", "name"};
         ZaloSDK.Instance.authenticate(this.mReactContext.getCurrentActivity(), LoginVia.APP_OR_WEB, new OAuthCompleteListener() {
@@ -37,25 +37,30 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
                 promise.reject(code, message);
             }
 
-
             @Override
             public void onGetOAuthComplete(OauthResponse response) {
-                final WritableMap params = Arguments.createMap();
                 String oauthCode = response.getOauthCode();
-                params.putString("oauthCode", oauthCode);
-                ZaloSDK.Instance.getProfile(activity, new ZaloOpenAPICallback() {
-                    @Override
-                    public void onResult(JSONObject data) {
-                        try {
-                            WritableMap user = UtilService.convertJsonToMap(data);
-                            params.putMap("user", user);
-                            promise.resolve(params);
-                        } catch (Exception ex) {
-                            String message = ex.getMessage();
-                            promise.reject("Get profile error", message);
+                if (TextUtils.isEmpty(oauthCode)) {
+                    final String code = response.getErrorCode() + "";
+                    final String message = response.getErrorMessage();
+                    promise.reject(code, message);
+                } else {
+                    final WritableMap params = Arguments.createMap();
+                    params.putString("oauthCode", oauthCode);
+                    ZaloSDK.Instance.getProfile(activity, new ZaloOpenAPICallback() {
+                        @Override
+                        public void onResult(JSONObject data) {
+                            try {
+                                WritableMap user = UtilService.convertJsonToMap(data);
+                                params.putMap("user", user);
+                                promise.resolve(params);
+                            } catch (Exception ex) {
+                                String message = ex.getMessage();
+                                promise.reject("Get profile error", message);
+                            }
                         }
-                    }
-                }, Fields);
+                    }, Fields);
+                }
             }
         });
     }
@@ -64,7 +69,6 @@ public class RNZaloModule extends ReactContextBaseJavaModule {
     public void logout() {
         ZaloSDK.Instance.unauthenticate();
     }
-
 
     @Override
     public String getName() {

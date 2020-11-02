@@ -1,5 +1,4 @@
 import {
-  StyleSheet,
   View,
   TouchableOpacity,
   Image,
@@ -22,13 +21,16 @@ export default class App extends React.Component {
     try {
       const data = await RNZalo.login();
       this.setState({ data });
-    } catch (e) {
-      console.log("e", e);
+    } catch (error) {
+      console.log("[ERROR] login", error);
     }
   };
 
   logout = () => {
     RNZalo.logout();
+    this.setState({
+      data: null,
+    });
   };
 
   renderUser() {
@@ -51,17 +53,21 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { data } = this.state;
+    const { container, wrapper, buttonStyle } = styles;
     return (
       <SafeAreaView style={{ flex: 1 }}>
-        <View style={styles.container}>
-          <View style={{ marginTop: 30 }}>
-            <TouchableOpacity style={styles.buttonStyle} onPress={this.login}>
+        <View style={container}>
+          <View style={wrapper}>
+            {!data &&
+            <TouchableOpacity style={buttonStyle} onPress={this.login}>
               <Text style={{ color: "#fff", fontSize: 18 }}>Login</Text>
-            </TouchableOpacity>
+            </TouchableOpacity>}
 
-            <TouchableOpacity style={styles.buttonStyle} onPress={this.logout}>
+            {data &&
+            <TouchableOpacity style={buttonStyle} onPress={this.logout}>
               <Text style={{ color: "#fff", fontSize: 18 }}>Logout</Text>
-            </TouchableOpacity>
+            </TouchableOpacity>}
           </View>
           {this.renderUser()}
         </View>
@@ -70,7 +76,7 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     backgroundColor: "#F5FCFF",
@@ -90,4 +96,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginVertical: 10,
   },
-});
+  wrapper: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+  },
+};

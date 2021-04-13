@@ -204,3 +204,7 @@ const styles = StyleSheet.create({
 });
 ```
   
+  
+ ### Issues:
+ 1. If you see the warning ```RCTBridge required dispatch_sync to load RCTDevLoadingView. This may lead to deadlocks``` => Follow this link https://github.com/facebook/react-native/issues/16376#issuecomment-350523177 to resolve it
+  

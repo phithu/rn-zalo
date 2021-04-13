@@ -42,3 +42,7 @@ local.properties
 # BUCK
 buck-out/
 \.buckd/
+
+
+demo/ios/Pods
+demo/ios/Podfile.lock
